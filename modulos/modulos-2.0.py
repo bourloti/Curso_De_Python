@@ -2,9 +2,10 @@
 #import funciones_buenas.saludar as m_saludar
 
 import sys
+print(sys.path)
 
-sys.path.append("c:\\Users\\Rainbow 6\\Desktop\\Curso de Python DALTO\\funciones_buenas")
+#sys.path.append("c:\\Users\\Rainbow 6\\Desktop\\Curso de Python DALTO\\funciones_buenas")
 
-import saludar as modulo_saludo
+#import saludar as modulo_saludo
 
-print(modulo_saludo.saludar("Dalto"))
+#print(modulo_saludo.saludar("Dalto"))

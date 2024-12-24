@@ -30,4 +30,4 @@ lista.sort()
 lista.reverse()
 
 #verificando si un elemento se encuentra en la lista
-elemento_encontrado = lista.index(56)
+elemento_encontrado = lista.index(65)

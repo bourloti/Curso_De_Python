@@ -1,8 +1,8 @@
 import pandas as pd
 
-#usando la funcion read_csv para leer el archivo CSV
-df = pd.read_csv("archivos\\datos.csv")
-df2 = pd.read_csv("archivos\\datos.csv")
+'''#usando la funcion read_csv para leer el archivo CSV
+df = pd.read_csv("Curso_De_Python\\archivos\\datos.csv")
+df2 = pd.read_csv("Curso_De_Python\\archivos\\datos.csv")
 
 #obteniendo los datos de la columna nombre
 nombres = df["nombre"]
@@ -28,6 +28,12 @@ filas_totales,columnas_totales = df.shape
 #obteniendo data estadística del dataframe:
 df_info = df.describe()
 
+#obtiene todos los metodos y propiedades del archvo .csv leido
+#print(dir(df))
+
+# obtiene el promedio de edades del archivo .csv
+#print(df['edad'].mean())'''
+
 #accediendo a la edad de la fila 2
 elemento_especifico_loc = df.loc[2,"edad"]
 
@@ -49,7 +55,7 @@ fila_3 = df.iloc[2,:]
 #accediendo a filas con edad mayor que 30 con loc
 mayor_que_30 = df.loc[df["edad"]>30,:]
 
-print(mayor_que_30)
+#print(mayor_que_30)
 
 
 

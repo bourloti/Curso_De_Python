@@ -4,6 +4,8 @@ diccionario = {
     "subs": 1000000
 }
 
+print(dir(diccionario))
+
 #recorriendo diccionario para obtener las claves
 for key in diccionario:
     key

@@ -1,6 +1,8 @@
 animales =  ["gato","perro","loro","cocorilo"]
 numeros = [52,16,14,72]
 
+print(dir(numeros))
+
 #recorriendo la lista animales
 for animal in animales: 
     print(f'Ahora la variable animal es igual a: {animal}')
@@ -22,7 +24,7 @@ for num in range(len(numeros)):
     print(numeros[num])
     
     
-#forma correcta de recorrer una lista con su indice
+#forma correcta de recorrer una lista con su indice, me devuleve una tupla por cada indice de la lista, con el indice y su valor
 for num in enumerate(numeros):
     indice = num[0]
     valor = num[1]

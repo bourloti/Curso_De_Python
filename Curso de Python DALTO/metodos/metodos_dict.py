@@ -1,5 +1,5 @@
 diccionario = {
-    "nombre" : 'lucas',
+    "nombre" : {'lucas': 43, 'fsdf':54},
     "apellido" : 'dalto',
     "subs" : 1000000
 }
@@ -8,7 +8,8 @@ diccionario = {
 claves = diccionario.keys()
 
 #obteniendo un elemento con get() (si no encuentra nada el programa continùa)
-valor_de_kasdks = diccionario.get("kasdks")
+valor_de_kasdks = diccionario["nombre"].get('lucas')
+print(valor_de_kasdks)
 print("hola papa, el programa continua")
 
 #eliminando todo del diccionario
@@ -21,3 +22,10 @@ diccionario.pop("subs")
 diccionario_iterable = diccionario.items()
 
 print(diccionario_iterable)
+
+diccionario = {'a': 1, 'b': 2, 'c': 3}
+for clave in diccionario:
+    print(clave)  # Imprime 'a', 'b', 'c'
+
+dicc = list(diccionario.items())
+print(dicc)
