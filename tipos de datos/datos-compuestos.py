@@ -27,7 +27,31 @@ diccionario = {
     'dato_duplicado' : "Soy Dalto"
 }
 
-print(diccionario['altura'])
+print(list(diccionario.values()))
+print(diccionario)
+
+for i in diccionario.values():
+    print(i)
+    if i == "canal":
+        print(diccionario['canal'])
+
+lista1 = ['nacho', 'lean', 'santi']
+lista2 = [23, 34, 54]
+
+condicion = ''
+
+while condicion != 'salir':
+    lista1.append(input("decime nombre: "))
+    lista2.append(int(input('decime edad: ')))
+    condicion = input("decime condicion: ")
+
+nombre = input("que nombre buscar: ")
+if nombre in lista1:
+    indice_de_valor = lista1.index(nombre)
+    edad_de_persona = lista2[indice_de_valor]
+    print(edad_de_persona)
+else:
+    print('nombre no existe')
 
 
 
