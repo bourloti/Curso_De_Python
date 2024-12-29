@@ -27,8 +27,6 @@ print(lista)'''
 print(valor_clave_1)
 '''
 
-
-
 while True:
     try:
         nombre = input('Colocar nombre para buscar apellido: ')

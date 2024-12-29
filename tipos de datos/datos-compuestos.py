@@ -27,6 +27,7 @@ diccionario = {
     'dato_duplicado' : "Soy Dalto"
 }
 
+print('nombre'*3)
 print(list(diccionario.values()))
 print(diccionario)
 
@@ -40,7 +41,7 @@ lista2 = [23, 34, 54]
 
 condicion = ''
 
-while condicion != 'salir':
+'''while condicion != 'salir':
     lista1.append(input("decime nombre: "))
     lista2.append(int(input('decime edad: ')))
     condicion = input("decime condicion: ")
@@ -53,5 +54,5 @@ if nombre in lista1:
 else:
     print('nombre no existe')
 
-
+'''
 

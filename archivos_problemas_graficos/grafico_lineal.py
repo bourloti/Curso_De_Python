@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 df = pd.read_csv("archivos_problemas_graficos\\pedos.csv")
-print(df)
+print(dir(df))
+
+#df.to_csv("archivos_problemas_graficos\\pedos-nuevos.csv",index=False)
 
 id_pedo_max = df['pedos'].idxmax()
 maximo_pedo = df['pedos'].max()
