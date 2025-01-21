@@ -1,9 +1,16 @@
 import pandas as pd
+import matplotlib
 
-'''#usando la funcion read_csv para leer el archivo CSV
-df = pd.read_csv("Curso_De_Python\\archivos\\datos.csv")
-df2 = pd.read_csv("Curso_De_Python\\archivos\\datos.csv")
+#usando la funcion read_csv para leer el archivo CSV
+df = pd.read_csv("Curso-Dalto-Python\\Curso_De_Python\\archivos\\datos.csv")
+print(df)
 
+diccionario = {'nombre': ['nacho'], 'apellido': ['bourlot'], 'edad': [23]}
+data_frame_nuevo = pd.DataFrame(diccionario)
+
+data_frame_nuevo.to_csv('Curso_De_Python\\archivos\\datos.csv', mode='a')
+
+'''
 #obteniendo los datos de la columna nombre
 nombres = df["nombre"]
 
@@ -34,7 +41,7 @@ df_info = df.describe()
 # obtiene el promedio de edades del archivo .csv
 #print(df['edad'].mean())'''
 
-#accediendo a la edad de la fila 2
+'''#accediendo a la edad de la fila 2
 elemento_especifico_loc = df.loc[2,"edad"]
 
 #accediendo a la edad de la fila 2 con iloc
@@ -56,7 +63,4 @@ fila_3 = df.iloc[2,:]
 mayor_que_30 = df.loc[df["edad"]>30,:]
 
 #print(mayor_que_30)
-
-
-
-
+'''
