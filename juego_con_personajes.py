@@ -16,9 +16,8 @@ class Personaje:
         return Personaje(nuevo_nombre, nueva_velocidad, nueva_fuerza)
 
 df = pd.read_csv('Curso_De_Python\\juego_de_personajes.csv')
-listaPersonajes = list(df.itertuples(index=False, name=None))
+#listaPersonajes = list(df.itertuples(index=False, name=None))
 print(df)
-print(listaPersonajes)
 
 def Mostrar_personajes():
     df = pd.read_csv('Curso_De_Python\\juego_de_personajes.csv')
@@ -39,7 +38,7 @@ def Crear_persoajes():
         agregar_personaje = {'nombre': [personaje], 'velocidad': [velocidad], 'fuerza': [fuerza]}
 
         df_nuevo = pd.DataFrame(agregar_personaje)
-        print(df_nuevo)
+        # print(df_nuevo)
         df_nuevo.to_csv('Curso_De_Python\\juego_de_personajes.csv', mode= 'a', index=False, header=False)
         #return listaPersonajes
     

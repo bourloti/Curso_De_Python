@@ -274,7 +274,7 @@ murcielago_1.amamantar()
 ave_1.comer()
 ave_1.volar()'''
 
-class Personaje:
+'''class Personaje:
     def __init__(self, nombre, velocidad, fuerza):
         self.nombre = nombre
         self.velocidad = velocidad
@@ -294,4 +294,14 @@ vegeta = Personaje('Vegeta', 50, 50)
 nachotelli = Personaje('Nachotelli', 150, 150)
 
 nuevo = goku + vegeta + nachotelli
-print(nuevo)
+print(nuevo)'''
+
+diccionario = {'key1': 0,'key2': 1}
+
+diccionario['key1'] = 1
+diccionario['key2'] = 2
+print(diccionario.items())
+
+for key, value in diccionario.items():
+    print(key)
+    print(value)

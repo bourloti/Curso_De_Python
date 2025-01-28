@@ -17,9 +17,27 @@ df['Ingreso Silo 101'] = pd.to_numeric(df['Ingreso Silo 101'])
 # Filtrar los datos para que solo queden dentro del rango esperado (por ejemplo, entre 0 y 50)
 df = df[(df['Ingreso Silo 101'] >= 0) & (df['Ingreso Silo 101'] <= 25)]
 
+df_nuevo = pd.DataFrame({'fecha_silo_101': df['Ingreso Silo 101 Time'], 'silo_101': df['Ingreso Silo 101']})
+
+print(df_nuevo)
+
+# Definir las fechas de inicio y fin que quieres filtrar
+fecha_inicio = '16/12/2024 11:02:28 p.m.'
+fecha_fin = '16/12/2024 11:12:28 p.m.'
+
+# Filtrar el DataFrame entre esas fechas
+df_filtrado = df_nuevo[(df_nuevo['fecha_silo_101'] >= fecha_inicio) & (df_nuevo['fecha_silo_101'] <= fecha_fin)]
+
+# Mostrar el DataFrame filtrado
+print(df_filtrado.mean())
+print(df_filtrado)
+#print(dir(df_filtrado))
+
+
 # Graficar la temperatura en función de la fecha y hora
 plt.figure(figsize=(10, 6))
-plt.plot(df['Ingreso Silo 101 Time'], df['Ingreso Silo 101'], marker='o', linestyle='-', color='b')
+#plt.plot(df['Ingreso Silo 101 Time'], df['Ingreso Silo 101'], marker='o', linestyle='-', color='b')
+plt.plot(df_filtrado['fecha_silo_101'],df_filtrado['silo_101'], marker='o', linestyle='-', color='b')
 
 # Personalizar la gráfica
 plt.title('Serie Temporal de Temperaturas', fontsize=10)
