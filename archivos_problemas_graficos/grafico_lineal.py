@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("archivos_problemas_graficos\\pedos.csv")
+df = pd.read_csv("Curso_De_Python\\archivos_problemas_graficos\\pedos.csv")
 print(dir(df))
 
 #df.to_csv("archivos_problemas_graficos\\pedos-nuevos.csv",index=False)
